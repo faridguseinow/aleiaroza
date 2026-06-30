@@ -1,0 +1,235 @@
+:root {
+  --color-espresso: #3e2723;
+  --color-butter: #ffedac;
+  --color-deep-brown: #2a1816;
+  --color-cream: #fff8e1;
+  --color-beige: #f6e8c8;
+  --color-gold: #d6b15e;
+  --color-rose: #c98e8e;
+  --color-green: #213b2b;
+  --color-white: #ffffff;
+  --color-soft-gray: #f6f6f6;
+  --color-muted: rgba(42, 24, 22, 0.76);
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body: 'Manrope', sans-serif;
+
+  /* compatibility aliases */
+  --color-wine: var(--color-espresso);
+  --color-dark: var(--color-deep-brown);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--color-deep-brown);
+  background: var(--color-white);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a,
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.pageShell {
+  position: relative;
+}
+
+.container {
+  width: min(1320px, calc(100vw - 32px));
+  margin: 0 auto;
+}
+
+.section {
+  position: relative;
+  padding: 5.5rem 0;
+  scroll-margin-top: 7rem;
+}
+
+.sectionCompact {
+  padding-top: 2rem;
+}
+
+.sectionShell {
+  border-radius: 0;
+  border: 1px solid #ececec;
+  background: var(--color-white);
+}
+
+.sectionInner {
+  padding: clamp(1.2rem, 3vw, 2rem);
+}
+
+.sectionHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 48rem;
+  margin-bottom: 2rem;
+}
+
+.eyebrow {
+  display: inline-flex;
+  width: fit-content;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: var(--color-espresso);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.sectionTitle {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 4.8vw, 4.1rem);
+  line-height: 0.96;
+  letter-spacing: -0.035em;
+  font-style: normal;
+}
+
+.sectionDescription {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 1rem;
+  line-height: 1.72;
+}
+
+.surfaceCard {
+  border-radius: 0;
+  border: 1px solid #ececec;
+  background: var(--color-white);
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.surfaceCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(42, 24, 22, 0.04);
+  border-color: #dfdfdf;
+}
+
+.ctaPrimary,
+.ctaSecondary,
+.ctaGhost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  padding: 0.95rem 1.45rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 1;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.ctaPrimary:hover,
+.ctaSecondary:hover,
+.ctaGhost:hover {
+  transform: translateY(-2px);
+}
+
+.ctaPrimary {
+  border: none;
+  color: var(--color-white);
+  background: var(--color-espresso);
+}
+
+.ctaSecondary {
+  border: 1px solid #dcdcdc;
+  color: var(--color-deep-brown);
+  background: var(--color-white);
+}
+
+.ctaGhost {
+  border: 1px solid #dcdcdc;
+  color: var(--color-deep-brown);
+  background: var(--color-white);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.isVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.skipLink {
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+  z-index: 60;
+  transform: translateY(-160%);
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  background: var(--color-deep-brown);
+  color: var(--color-white);
+  transition: transform 0.2s ease;
+}
+
+.skipLink:focus {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 4rem 0;
+    scroll-margin-top: 6rem;
+  }
+
+  .container {
+    width: min(1320px, calc(100vw - 20px));
+  }
+
+  .sectionDescription {
+    font-size: 0.95rem;
+  }
+
+  .ctaPrimary,
+  .ctaSecondary,
+  .ctaGhost {
+    width: 100%;
+  }
+}

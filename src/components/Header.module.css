@@ -1,0 +1,139 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(42, 24, 22, 0.08);
+}
+
+.shell {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.desktopNav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.15rem;
+  flex: 1;
+}
+
+.navLink,
+.mobileLink {
+  color: rgba(42, 24, 22, 0.78);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.navLink:hover,
+.mobileLink:hover {
+  color: var(--color-espresso);
+  transform: translateY(-1px);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.desktopLanguage {
+  display: flex;
+}
+
+.burger {
+  display: none;
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  background: var(--color-white);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.26rem;
+}
+
+.burger span {
+  width: 1.1rem;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--color-deep-brown);
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.mobileOverlay {
+  position: fixed;
+  inset: 0;
+  padding: 4.65rem 0 0;
+  background: rgba(255, 255, 255, 0.98);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.mobileOverlayOpen {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobilePanel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 1.25rem 1rem 2rem;
+}
+
+.mobileNav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mobileLink {
+  font-size: 1.05rem;
+}
+
+.lineOneActive {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.lineTwoActive {
+  opacity: 0;
+}
+
+.lineThreeActive {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+@media (max-width: 920px) {
+  .desktopNav,
+  .desktopLanguage {
+    display: none;
+  }
+
+  .burger {
+    display: inline-flex;
+  }
+}
+
+@media (min-width: 921px) {
+  .mobileOverlay {
+    display: none;
+  }
+}

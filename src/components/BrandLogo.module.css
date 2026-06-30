@@ -1,0 +1,97 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.82rem;
+  min-width: 0;
+  color: var(--color-dark);
+  text-decoration: none;
+}
+
+.logoInverse {
+  color: var(--color-white);
+}
+
+.mark {
+  position: relative;
+  width: 3.2rem;
+  height: 3.2rem;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 4px;
+  border: 1px solid rgba(42, 24, 22, 0.08);
+  background:
+    linear-gradient(160deg, rgba(255, 237, 172, 0.42), rgba(255, 255, 255, 0.8)),
+    rgba(255, 255, 255, 0.9);
+  overflow: hidden;
+}
+
+.image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.initials {
+  opacity: 0;
+  font-family: var(--font-display);
+  font-size: 1.12rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: var(--color-wine);
+  transition: opacity 0.3s ease;
+}
+
+.initialsVisible {
+  opacity: 1;
+}
+
+.logoInverse .mark {
+  border-color: rgba(255, 255, 255, 0.14);
+  background:
+    linear-gradient(160deg, rgba(255, 237, 172, 0.18), rgba(255, 255, 255, 0.12)),
+    rgba(255, 255, 255, 0.06);
+}
+
+.logoInverse .initials {
+  color: rgba(255, 248, 225, 0.92);
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: clamp(1.22rem, 1.35vw, 1.48rem);
+  font-weight: 700;
+  line-height: 0.92;
+}
+
+.tagline {
+  margin-top: 0.16rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(42, 24, 22, 0.64);
+}
+
+.logoInverse .tagline {
+  color: rgba(255, 248, 225, 0.62);
+}
+
+@media (max-width: 640px) {
+  .mark {
+    width: 2.9rem;
+    height: 2.9rem;
+  }
+
+  .tagline {
+    letter-spacing: 0.18em;
+  }
+}
