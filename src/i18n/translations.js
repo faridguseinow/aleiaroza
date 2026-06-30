@@ -33,11 +33,9 @@ export const translations = {
       menuOpen: 'Menyunu aç',
       menuClose: 'Menyunu bağla',
       nav: [
-        { href: '#hero', label: 'Ana səhifə' },
         { href: '#gallery', label: 'Kolleksiya' },
         { href: '#services', label: 'Xidmətlər' },
         { href: '#contact', label: 'Əlaqə' },
-        { href: '#map', label: 'Xəritə' },
       ],
     },
     hero: {
@@ -126,9 +124,9 @@ export const translations = {
     },
     contact: {
       eyebrow: 'Əlaqə',
-      title: 'Əlaqə',
+      title: 'Əlaqə və ünvan',
       description:
-        'Əsas məlumatlar və sürətli sorğu burada toplanıb. Sifariş və suallar üçün ən rahat kanal WhatsApp-dır.',
+        'Əsas əlaqə məlumatları, sürətli sorğu forması və xəritə burada birləşdirilib.',
       phoneLabel: 'Telefon / WhatsApp',
       instagramLabel: 'Instagram',
       addressLabel: 'Ünvan',
@@ -147,9 +145,9 @@ export const translations = {
     },
     map: {
       eyebrow: 'Xəritə',
-      title: 'Bizi xəritədə tapın',
+      title: 'Mağazanın yerləşməsi',
       description:
-        'Mağazanın yerləşməsini tez tapmaq üçün keçidlər hazırdır. İstəyə görə bura sonradan birbaşa Google Maps iframe əlavə oluna bilər.',
+        'Xəritəni böyüdün və ya marşrut üçün uyğun servisi seçin.',
       placeholderTitle: 'Google Maps iframe üçün hazır sahə',
       placeholderText:
         'Google Maps embed URL əlavə etdikdən sonra bu blok avtomatik interaktiv xəritə ilə əvəzlənəcək.',
@@ -158,8 +156,9 @@ export const translations = {
       helper: 'Ünvan: Heydər Əliyev prospekti 87/89, 1-ci mərtəbə, Nərimanov, Bakı',
     },
     footer: {
-      label: 'Flower Boutique',
+      label: 'Aleia Roza',
       copyright: 'Bütün hüquqlar qorunur.',
+      policyLinks: ['Privacy Policy', 'Terms of Use', 'Cookie Policy', 'User Agreement'],
     },
   },
   ru: {
@@ -193,11 +192,9 @@ export const translations = {
       menuOpen: 'Открыть меню',
       menuClose: 'Закрыть меню',
       nav: [
-        { href: '#hero', label: 'Главная' },
         { href: '#gallery', label: 'Коллекция' },
         { href: '#services', label: 'Услуги' },
         { href: '#contact', label: 'Контакты' },
-        { href: '#map', label: 'Карта' },
       ],
     },
     hero: {
@@ -250,9 +247,9 @@ export const translations = {
     },
     contact: {
       eyebrow: 'Контакты',
-      title: 'Контакты',
+      title: 'Контакты и адрес',
       description:
-        'Все практические данные собраны здесь. Для быстрого запроса удобнее всего использовать WhatsApp.',
+        'Контакты, короткая форма запроса и карта собраны в одном компактном блоке.',
       phoneLabel: 'Телефон / WhatsApp',
       instagramLabel: 'Instagram',
       addressLabel: 'Адрес',
@@ -271,9 +268,9 @@ export const translations = {
     },
     map: {
       eyebrow: 'Карта',
-      title: 'Найдите нас на карте',
+      title: 'Расположение магазина',
       description:
-        'Основные ссылки на карту уже добавлены. При необходимости сюда можно позже вставить полноценный Google Maps iframe.',
+        'Откройте маршрут в удобном сервисе или посмотрите точку прямо на карте.',
       placeholderTitle: 'Область для Google Maps iframe',
       placeholderText:
         'После добавления embed URL этот блок можно сразу заменить интерактивной картой.',
@@ -282,8 +279,9 @@ export const translations = {
       helper: 'Адрес: проспект Гейдара Алиева 87/89, 1 этаж, Нариманов, Баку',
     },
     footer: {
-      label: 'Flower Boutique',
+      label: 'Aleia Roza',
       copyright: 'Все права защищены.',
+      policyLinks: ['Privacy Policy', 'Terms of Use', 'Cookie Policy', 'User Agreement'],
     },
   },
   en: {
@@ -317,11 +315,9 @@ export const translations = {
       menuOpen: 'Open menu',
       menuClose: 'Close menu',
       nav: [
-        { href: '#hero', label: 'Home' },
         { href: '#gallery', label: 'Collection' },
         { href: '#services', label: 'Services' },
         { href: '#contact', label: 'Contact' },
-        { href: '#map', label: 'Map' },
       ],
     },
     hero: {
@@ -374,9 +370,9 @@ export const translations = {
     },
     contact: {
       eyebrow: 'Contact',
-      title: 'Contact',
+      title: 'Contact and address',
       description:
-        'All practical details are concentrated here. WhatsApp is the fastest way to send a request.',
+        'Key contact details, a quick request form, and the map are combined in one section.',
       phoneLabel: 'Phone / WhatsApp',
       instagramLabel: 'Instagram',
       addressLabel: 'Address',
@@ -395,9 +391,9 @@ export const translations = {
     },
     map: {
       eyebrow: 'Map',
-      title: 'Find us on the map',
+      title: 'Store location',
       description:
-        'Direct map links are already available here, and the section is ready for a full Google Maps iframe if needed later.',
+        'Open directions in your preferred service or view the location directly on the map.',
       placeholderTitle: 'Ready area for Google Maps iframe',
       placeholderText:
         'Once an embed URL is added, this block can be replaced with a live interactive map.',
@@ -406,8 +402,9 @@ export const translations = {
       helper: 'Address: Heydar Aliyev Avenue 87/89, 1st floor, Narimanov, Baku',
     },
     footer: {
-      label: 'Flower Boutique',
+      label: 'Aleia Roza',
       copyright: 'All rights reserved.',
+      policyLinks: ['Privacy Policy', 'Terms of Use', 'Cookie Policy', 'User Agreement'],
     },
   },
 }

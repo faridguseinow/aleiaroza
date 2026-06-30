@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react'
-import Contact from './components/Contact'
+import BackToTop from './components/BackToTop'
+import ContactMap from './components/ContactMap'
 import Footer from './components/Footer'
 import Gallery from './components/Gallery'
 import Header from './components/Header'
 import Hero from './components/Hero'
-import MapSection from './components/MapSection'
 import Services from './components/Services'
 import { defaultLanguage, supportedLanguages, translations } from './i18n/translations'
 
@@ -73,11 +73,11 @@ function App() {
         <Hero t={t} />
         <Gallery t={t} />
         <Services t={t} />
-        <Contact t={t} />
-        <MapSection t={t} />
+        <ContactMap t={t} />
       </main>
 
       <Footer t={t} />
+      <BackToTop label={t.common.backToTop} />
     </div>
   )
 }

@@ -13,13 +13,19 @@
 .brand {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 1rem;
 }
 
-.brand span {
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem 1.1rem;
+}
+
+.links a {
   color: rgba(255, 248, 225, 0.72);
-  font-size: 0.88rem;
+  font-size: 0.84rem;
+  text-decoration: none;
 }
 
 .bottom {

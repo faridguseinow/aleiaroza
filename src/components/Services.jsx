@@ -6,7 +6,6 @@ function Services({ t }) {
     <section className={`${styles.section} section`} id="services">
       <div className="container">
         <div className="sectionHeader reveal" data-reveal>
-          <span className="eyebrow">{t.services.eyebrow}</span>
           <h2 className="sectionTitle">{t.services.title}</h2>
           <p className="sectionDescription">{t.services.description}</p>
         </div>

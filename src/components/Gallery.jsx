@@ -7,7 +7,6 @@ function Gallery({ t }) {
     <section className="section" id="gallery">
       <div className="container">
         <div className="sectionHeader reveal" data-reveal>
-          <span className="eyebrow">{t.gallery.eyebrow}</span>
           <h2 className="sectionTitle">{t.gallery.title}</h2>
           <p className="sectionDescription">{t.gallery.description}</p>
         </div>

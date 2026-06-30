@@ -1,6 +1,6 @@
 import styles from './LanguageSwitcher.module.css'
 
-const languages = ['ru', 'az', 'en']
+const languages = ['az', 'ru', 'en']
 
 function LanguageSwitcher({ currentLanguage, label, onChange }) {
   return (

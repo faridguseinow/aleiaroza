@@ -22,7 +22,6 @@ function BrandLogo({ inverse = false }) {
 
       <span className={styles.copy}>
         <span className={styles.name}>Aleia Roza</span>
-        <span className={styles.tagline}>Flower Boutique</span>
       </span>
     </a>
   )

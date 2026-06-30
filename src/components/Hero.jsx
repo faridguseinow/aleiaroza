@@ -1,9 +1,13 @@
 import { createWhatsAppLink } from '../utils/whatsapp'
+import SmartImage from './SmartImage'
 import styles from './Hero.module.css'
 
-// Replace this URL later with a local hero image when real assets are available.
 const HERO_IMAGE_URL =
-  'https://images.unsplash.com/photo-1754494183973-e736b79fb084?auto=format&fit=crop&w=2200&q=80'
+  'https://images.unsplash.com/photo-1647404188414-3a25874a254d?auto=format&fit=crop&w=2200&q=80'
+const HERO_FEATURED_IMAGE =
+  'https://images.unsplash.com/photo-1736347615447-454733d8163d?auto=format&fit=crop&w=1400&q=80'
+const HERO_DETAIL_IMAGE =
+  'https://images.unsplash.com/photo-1683861761877-93fd0ca01709?auto=format&fit=crop&w=1400&q=80'
 
 function Hero({ t }) {
   return (
@@ -40,15 +44,36 @@ function Hero({ t }) {
                 {t.hero.secondaryAction}
               </a>
             </div>
+          </div>
 
-            <div className={styles.meta}>
-              <div>
+          <div className={styles.visualStack}>
+            <div className={styles.featureCard}>
+              <SmartImage
+                alt={t.hero.visualAlt}
+                className={styles.featureImage}
+                fallbackLabel={t.hero.visualFallback}
+                src={HERO_FEATURED_IMAGE}
+              />
+              <div className={styles.featureOverlay}>
                 <span>{t.hero.sideTitle}</span>
                 <strong>{t.hero.metaLeft}</strong>
               </div>
-              <div>
+            </div>
+
+            <div className={styles.detailGrid}>
+              <div className={styles.detailCard}>
+                <SmartImage
+                  alt={t.hero.visualAlt}
+                  className={styles.detailImage}
+                  fallbackLabel={t.hero.visualFallback}
+                  src={HERO_DETAIL_IMAGE}
+                />
+              </div>
+
+              <div className={styles.noteCard}>
                 <span>{t.hero.metaRightLabel}</span>
                 <strong>{t.hero.metaRight}</strong>
+                <p>{t.hero.sideText}</p>
               </div>
             </div>
           </div>

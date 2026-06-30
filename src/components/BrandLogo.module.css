@@ -61,7 +61,6 @@
 
 .copy {
   display: flex;
-  flex-direction: column;
   min-width: 0;
 }
 
@@ -72,26 +71,9 @@
   line-height: 0.92;
 }
 
-.tagline {
-  margin-top: 0.16rem;
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: rgba(42, 24, 22, 0.64);
-}
-
-.logoInverse .tagline {
-  color: rgba(255, 248, 225, 0.62);
-}
-
 @media (max-width: 640px) {
   .mark {
     width: 2.9rem;
     height: 2.9rem;
-  }
-
-  .tagline {
-    letter-spacing: 0.18em;
   }
 }

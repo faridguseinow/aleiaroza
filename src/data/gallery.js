@@ -32,7 +32,7 @@ export const galleryItems = [
   {
     id: 'arrangements',
     image:
-      'https://images.unsplash.com/photo-1706899155935-220222d7f1e2?auto=format&fit=crop&w=1400&q=80',
+      'https://images.unsplash.com/photo-1468327768560-75b778cbb551?auto=format&fit=crop&w=1400&q=80',
     link: 'https://www.instagram.com/aleia__roza/',
   },
 ]

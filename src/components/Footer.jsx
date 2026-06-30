@@ -10,8 +10,15 @@ function Footer({ t }) {
         <div className={styles.shell}>
           <div className={styles.brand}>
             <BrandLogo inverse />
-            <span>{t.footer.label}</span>
           </div>
+
+          <nav aria-label="Footer links" className={styles.links}>
+            {t.footer.policyLinks.map((item) => (
+              <a href="#mini-footer" key={item}>
+                {item}
+              </a>
+            ))}
+          </nav>
 
           <div className={styles.bottom}>
             <span>© {year} Aleia Roza</span>
